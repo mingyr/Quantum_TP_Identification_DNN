@@ -8,12 +8,12 @@ This repo mainly consists of four parts: 1. the Matlab scripts for generating th
 
 <p>1. preliminary</p>
 We provide a very general introduction to the neural networks in the documents folder. The readers with background of physics are encouraged to read it to understand the principle of back-propagation or error-propagation. Also, an intuitive summary to the success of Deep Learning is not too bad: In conventional image processing, we tend to design filters for specific problems. By using neural network, this process can be automated. And such a highly non-linear process can find its support in mammalian's visual system.
-<p/>
+<p></p>
 The libraries we used to construct the neural network are TensorFlow and Sonnet. TensorFlow is an open-sourced machine learning library developed by Google Brain team especially taking consideration of Deep Learning. With backend computation engien implemented in C++ and Python interface, it is powerful and flexible. Sonnet is developed and open-sourced by DeepMind. It is a high-level abstraction of TensorFlow and more user-friendly via its modular philosophy. There are intensive textbooks published giving tutorial on TensorFlow.
 
 <p>2. data generating</p>
 For data generationg, please refer to the Matlab script DATA_GEN.m.
 The raw data bearing the quantum state information cannot be directly consumed by the neural network especially from the effectiveness perspective. It has to be converted into the format called TF records required by TensorFlow.
-<p/>
+<p></p>
 (we will upload in a procedural way, the whole uploading process might take couple of weeks at longest.)
 
