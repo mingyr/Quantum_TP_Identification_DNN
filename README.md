@@ -17,10 +17,10 @@ The libraries we used to construct the neural network are TensorFlow and Sonnet.
 For data generationg, please refer to the Matlab script DATA_GEN.m.
 The raw data bearing the quantum state information cannot be directly consumed by the neural network especially from the effectiveness perspective. It has to be converted into the format called TF records required by TensorFlow.
 
-Due to the size of raw data, we cannot load all data once for all in the memory then shuffle the data for training, validation and test respectively. We do this in an indirect way: we manipulate with the filenames, and based on the filenames to generate corresponding sets. The file in fulfilling this purpose is data_prep.py. Note it is a hybrid programming of Python and Matlab, the users have to follow the  <href="https://au.mathworks.com/help/matlab/matlab-engine-for-python.html">steps</a> to integrate Matlab into Python environment. 
+Due to the size of raw data, we cannot load all data once for all in the memory then shuffle the data for training, validation and test respectively. We do this in an indirect way: we manipulate with the filenames, and based on the filenames to generate corresponding sets. The file in fulfilling this purpose is data_prep.py. Note it is a hybrid programming of Python and Matlab, the users have to follow the  <a href="https://au.mathworks.com/help/matlab/matlab-engine-for-python.html">steps</a> to integrate Matlab into Python environment. 
 
 If the users are intended to investigate the distribution of sets for training, validation and test respectively, please use the files: filename_py2mat.py, train_dist.m, val_dist.m and test_dist.m. An case for test set distribution is demonstrated as below:
-<img src="train-dist.png" alt="Training Set Distribution" height="700" width="525">
+<img src="data-prep/train-dist.png" alt="Training Set Distribution" height="700" width="525">
 
 (we will upload in a procedural way, the whole uploading process might take couple of weeks at longest.)
 
