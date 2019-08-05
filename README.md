@@ -12,14 +12,14 @@ We provide a very general introduction to the neural networks in the documents f
 
 The libraries we used to construct the neural network are TensorFlow and Sonnet. TensorFlow is an open-sourced machine learning library developed by Google Brain team especially taking consideration of Deep Learning. With backend computation engien implemented in C++ and Python interface, it is powerful and flexible. Sonnet is developed and open-sourced by DeepMind. It is a high-level abstraction of TensorFlow and more user-friendly via its modular philosophy. There are intensive textbooks published giving tutorial on TensorFlow.
 
-<p>2. data generating</p>
+<p>2. data preparation</p>
 
 For data generationg, please refer to the Matlab script DATA_GEN.m.
 The raw data bearing the quantum state information cannot be directly consumed by the neural network especially from the effectiveness perspective. It has to be converted into the format called TF records required by TensorFlow.
 
 Due to the size of raw data, we cannot load all data once for all in the memory then shuffle the data for training, validation and test respectively. We do this in an indirect way: we manipulate with the filenames, and based on the filenames to generate corresponding sets. The file in fulfilling this purpose is data_prep.py. Note it is a hybrid programming of Python and Matlab, the users have to follow the  <a href="https://au.mathworks.com/help/matlab/matlab-engine-for-python.html">steps</a> to integrate Matlab into Python environment. 
 
-If the users are intended to investigate the distribution of sets for training, validation and test respectively, please use the files: filename_py2mat.py, train_dist.m, val_dist.m and test_dist.m. An case for test set distribution is demonstrated as below:
+If the users are intended to investigate the distribution of sets for training, validation and test respectively, please use the files: filename_py2mat.py, train_dist.m, val_dist.m and test_dist.m. A case for test set distribution is demonstrated as below:
 
 <img src="data-prep/test-dist.png" alt="Training Set Distribution" height="525" width="700">
 
