@@ -30,9 +30,9 @@ train_filename_indices = list(range(num_training))
 val_filename_indices = list(range(num_validation))
 test_filename_indices = list(range(num_test))
 
-random.shuffle(train_filename_indices)
-random.shuffle(val_filename_indices)
-random.shuffle(test_filename_indices)
+# random.shuffle(train_filename_indices)
+# random.shuffle(val_filename_indices)
+# random.shuffle(test_filename_indices)
 
 def float_feature(value):
     return tf.train.Feature(float_list = tf.train.FloatList(value = value))
